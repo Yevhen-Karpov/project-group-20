@@ -1,7 +1,49 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+:root {
+  --main-text-color: #b9b9b9;
+  --accent-text-color: #111518;
+  --accent-link-color: #ff6b09;
+}
+
 .container {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .container {
     margin: 0 auto;
@@ -21,14 +63,19 @@
 .footer__container {
   text-align: center;
 }
+
 .footer__logo {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
   padding-bottom: 22px;
 }
+
 .footer__phone {
   padding-bottom: 31px;
 }
+
 .footer__phone-link {
   font-family: Montserrat;
   font-style: normal;
@@ -38,10 +85,13 @@
   letter-spacing: 0.08em;
   color: #111518;
 }
+
 .footer__icon-phone {
   width: 40px;
   height: 40px;
 }
+
 .test {
   margin: auto;
 }
+/*# sourceMappingURL=main.css.map */
