@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --main-text-color: #b9b9b9;
+  --accent-text-color: #111518;
+  --accent-link-color: #ff6b09;
+}
+/*# sourceMappingURL=main.css.map */
