@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;ACHH,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACA,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;CACjB;;AACD,AAAA,EAAE;AACF,EAAE,CAAC;EACD,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;EAChB,YAAY,EAAE,CAAC;CAChB;;AACD,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;CACf;;AAED,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,IAAI;CACjB;;AACD,AAAA,KAAK,CAAC;EACJ,eAAe,EAAE,IAAI;CACtB;;ACzBD,AAAA,KAAK,CAAC;EACJ,iBAAiB,CAAA,QAAC;EAClB,mBAAmB,CAAA,QAAC;EACpB,mBAAmB,CAAA,QAAC;CACrB;;AYJD,AAAA,UAAU,CAAC;EACT,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACpB;;AACD,MAAM,MAAM,MAAM,MAAM,gBAAgB,EAAE,KAAK,OAAO,gBAAgB,EAAE,KAAK;EAC3E,AAAA,UAAU,CAAC;IACT,MAAM,EAAE,MAAM;GACf;;;AAGH;;;;;;;;;IASI;AACJ,AAAA,kBAAkB,CAAC;EACjB,UAAU,EAAE,MAAM;CACnB;;AACD,AAAA,aAAa,CAAC;EACZ,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;CACrB;;AACD,AAAA,cAAc,CAAC;EACb,cAAc,EAAE,IAAI;CACrB;;AACD,AAAA,mBAAmB,CAAC;EAClB,WAAW,EAAE,UAAU;EACvB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,OAAO;CACf;;AACD,AAAA,mBAAmB,CAAC;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "main.scss",
+        "base/_common.scss",
+        "utils/_variables.scss",
+        "components/_header.scss",
+        "components/_hero.scss",
+        "components/_advantages.scss",
+        "components/_problems.scss",
+        "components/_how-we-do.scss",
+        "components/_program.scss",
+        "components/_benefits.scss",
+        "components/_about.scss",
+        "components/_guarantee.scss",
+        "components/_reviews.scss",
+        "components/_contacts.scss",
+        "components/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
