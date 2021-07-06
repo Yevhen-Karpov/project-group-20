@@ -25,6 +25,12 @@ img {
   height: auto;
 }
 
+body {
+  font-family: Montserrat;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 20px;
@@ -48,7 +54,7 @@ img {
   padding-top: 0;
 }
 
-.section__title{
+.section__title {
   margin-bottom: 30px;
 
   font-weight: 800;
@@ -58,4 +64,3 @@ img {
   letter-spacing: 0.03em;
   color: #111518;
 }
-
