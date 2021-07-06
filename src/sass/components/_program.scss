@@ -10,7 +10,7 @@
     padding-top: 120px;
     padding-bottom: 153px;
   }
-  
+
   &:before {
     content: '';
     display: none;
@@ -111,7 +111,7 @@
   }
   &__semester {
     position: relative;
-    padding-left: 31px;
+    padding-left: 30px;
 
     font-weight: 700;
     font-size: 14px;
@@ -150,7 +150,7 @@
 
   &__semester::before {
     position: absolute;
-    left: -6px;
+    left: -7px;
     top: 0px;
 
     display: block;
@@ -159,13 +159,17 @@
     height: 12px;
     border-radius: 50%;
     margin-right: 20px;
-    background: var(--accent-link-color);
+    background-image: url(/images/program/accent-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 
     @media screen and (min-width: 1366px) {
       left: -3px;
-      top: -70px;
+      top: -69px;
       width: 17px;
       height: 17px;
+      background-image: url(/images/program/accent-desktop.svg);
+
     }
   }
 
