@@ -45,7 +45,7 @@ img {
 }
 
 .footer__information {
-  background: #111518;
+  background: var(--accent-text-color);
 }
 
 .footer__desk {
@@ -56,12 +56,42 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 28px;
-  color: #b9b9b9;
+  color: var(--main-text-color);
+}
+
+.footer__phone-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: var(--accent-text-color);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__icon-phone {
+  margin-right: 10px;
+  width: 30px;
+  height: 29px;
+  fill: var(--accent-link-color);
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .container {
     margin: 0 auto;
+  }
+  .footer__icon-phone {
+    width: 20px;
+    height: 19px;
   }
   .footer__container {
     text-align: center;
@@ -75,19 +105,6 @@ img {
   }
   .footer__phone {
     padding-bottom: 31px;
-  }
-  .footer__phone-link {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.08em;
-    color: #111518;
-  }
-  .footer__icon-phone {
-    width: 40px;
-    height: 40px;
   }
   .footer__img-logo {
     width: 80px;
@@ -131,11 +148,11 @@ img {
     padding-left: 20px;
   }
   .footer__phone {
-    padding-right: 10px;
+    padding-right: 24px;
   }
-  .test {
-    border-left: 1px solid #b9b9b9;
-    padding-left: 10px;
+  .footer__icon-instagram {
+    border-left: 1px solid var(--main-text-color);
+    padding-left: 24px;
   }
   .footer__logo {
     padding-top: 40px;
@@ -147,26 +164,23 @@ img {
   .container {
     width: 1366px;
   }
-}
-
-/*   .footer__list {
-    display: flex;
-    align-items: center;
-  }
   .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-} */
-/* @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
+  .footer__logo {
+    margin-left: 183px;
+    margin-right: 290px;
+  }
+  .footer__desk {
+    margin-left: 183px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-} */
 /*# sourceMappingURL=main.css.map */
