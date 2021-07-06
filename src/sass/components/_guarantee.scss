@@ -32,12 +32,21 @@
 
 .garantee__title {
   text-align: center;
+
+  font-family: Montserrat;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: #111518;
+
   @media screen and (max-width: 1365px) {
     margin-bottom: 30px;
+    font-size: 26px;
   }
 
   @media screen and (min-width: 1366px) {
     margin-bottom: 50px;
+    font-size: 46px;
   }
 }
 
@@ -117,4 +126,8 @@
       height: 30px;
     }
   }
+}
+
+.garantee__accent {
+  color: #ff6b09;
 }
