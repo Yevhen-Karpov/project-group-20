@@ -3,8 +3,6 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-
-
 h1,
 h2,
 h3,
@@ -12,33 +10,25 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-}
-
-.list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-:root {
-  --main-text-color: #b9b9b9;
-  --accent-text-color: #111518;
-  --accent-link-color: #ff6b09;
+body {
+  font-family: Montserrat;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .container {
@@ -46,7 +36,133 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   width: 320px;
+}
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 1366px;
+  }
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section__title {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #111518;
+}
+
+:root {
+  --main-text-color: #b9b9b9;
+  --accent-text-color: #111518;
+  --accent-link-color: #ff6b09;
+  --accent-header: #ffffff;
+  --accent-description: #3d3d3d;
+}
+
+.hero__title {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: #111518;
+  margin-bottom: 60px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.containerr {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.advantages__title-adapted::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 61px;
+  height: 63px;
+  background-image: url(/images/mobaile/group1.svg);
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.advantages__title-modern::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 61px;
+  height: 63px;
+  background-image: url(/images/mobaile/group2.svg);
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.advantages__title-financial::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 61px;
+  height: 63px;
+  background-image: url(/images/mobaile/group3.svg);
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.advantages__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.08em;
+  color: #111518;
+  margin-bottom: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+/* .container {
+  padding-left: 20px;
+  padding-right: 20px;
+} */
 .footer__information {
   background: var(--accent-text-color);
 }
@@ -54,11 +170,8 @@ img {
 .footer__desk {
   padding-top: 21px;
   padding-bottom: 21px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 2;
   color: var(--main-text-color);
 }
 
@@ -69,11 +182,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   letter-spacing: 0.08em;
   color: var(--accent-text-color);
   -webkit-box-align: center;
@@ -128,7 +239,6 @@ img {
   .container {
     width: 768px;
   }
-  
   .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -167,22 +277,6 @@ img {
 @media screen and (min-width: 1366px) {
   .container {
     width: 1366px;
-  }
-}
-
-
-
-.hero__title {
-  font-weight: 800;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
-  color: #111518;
-  margin-bottom: 60px;
-}
-
-/*   .footer__list {
-    display: flex;
-    align-items: center;
   }
   .footer__container {
     display: -webkit-box;
