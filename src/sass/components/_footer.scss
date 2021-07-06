@@ -1,0 +1,113 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.footer__information {
+  background: #111518;
+}
+.footer__desk {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #b9b9b9;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .container {
+    margin: 0 auto;
+  }
+  .footer__container {
+    text-align: center;
+  }
+  .footer__logo {
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
+  .footer__phone {
+    padding-bottom: 31px;
+  }
+  .footer__phone-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    color: #111518;
+  }
+  .footer__icon-phone {
+    width: 40px;
+    height: 40px;
+  }
+  .footer__img-logo {
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .footer__img-instagram {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .footer__desk {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .footer__list {
+    display: flex;
+    align-items: center;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__desk {
+    padding-left: 20px;
+  }
+  .footer__phone {
+    padding-right: 10px;
+  }
+  .test {
+    border-left: 1px solid #b9b9b9;
+    padding-left: 10px;
+  }
+  .footer__logo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 1366px;
+  }
+}
+/*   .footer__list {
+    display: flex;
+    align-items: center;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+} */
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+} */
