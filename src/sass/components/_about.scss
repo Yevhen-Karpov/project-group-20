@@ -1,23 +1,35 @@
-.about__container {
-  padding-left: 20px;
-  padding-right: 20px;
-
+.about {
   @media screen and (max-width: 767px) {
-    max-width: 440px;
     padding-top: 19px;
     padding-bottom: 25px;
   }
 
   @media screen and (max-width: 1365px) {
-    max-width: 728px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
 
   @media screen and (min-width: 1365px) {
-    max-width: 1326px;
     padding-top: 64px;
     padding-bottom: 77px;
+  }
+}
+
+.about__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 440px;
+  }
+
+  @media screen and (max-width: 1365px) {
+    max-width: 728px;
+  }
+
+  @media screen and (min-width: 1365px) {
+    max-width: 1326px;
   }
 }
 
@@ -26,7 +38,7 @@
   font-weight: 800;
   line-height: 1.3;
   letter-spacing: 0.03em;
-  color: #111518;
+  color: var(--accent-text-color);
 
   @media screen and (max-width: 1365px) {
     margin-bottom: 30px;
@@ -63,7 +75,7 @@
   font-weight: 800;
   letter-spacing: 0.08em;
 
-  color: #111518;
+  color: (--accent-text-color);
   border-bottom: 1px solid #b9b9b9;
 
   @media screen and (max-width: 767px) {
@@ -109,11 +121,10 @@
 .about__item {
   position: relative;
 
-  font-family: Montserrat;
   font-weight: 600;
   letter-spacing: 0.06em;
 
-  color: #111518;
+  color: var(--accent-text-color);
 
   &::before {
     position: absolute;
@@ -162,7 +173,7 @@
 
 .about__line {
   display: inline-block;
-  border-bottom: 2px solid #ff6b09;
+  border-bottom: 2px solid var(--accent-link-color);
   width: 20px;
   @media screen and (max-width: 767px) {
     margin-bottom: 21px;
@@ -178,10 +189,7 @@
 }
 
 .about__text {
-  font-family: Montserrat;
-  font-weight: 500;
-
-  color: #b9b9b9;
+  color: var(--main-text-color);
 
   @media screen and (max-width: 767px) {
     font-size: 12px;
@@ -201,9 +209,8 @@
 }
 
 .about__link {
-  font-family: Montserrat;
-  font-weight: 500;
-  color: #ff6b09;
+  color: (--accent-link-color);
+  text-decoration: underline;
 
   @media screen and (max-width: 1365px) {
     margin-top: 10px;
