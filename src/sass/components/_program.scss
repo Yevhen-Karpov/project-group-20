@@ -1,6 +1,8 @@
 /*--------------------Our program----------------*/
 
 .section-program {
+  counter-reset: semester;
+
   position: relative;
   padding-top: 50px;
 
@@ -97,7 +99,6 @@
 }
 
 .program {
-
   margin: auto;
   padding-left: 68px;
 
@@ -147,8 +148,15 @@
       }
     }
   }
-
   &__semester::before {
+    counter-increment: semester;
+    content: counter(semester) ' ';
+    @media screen and (min-width: 1366px) {
+      font-size: 30px;
+      line-height: 0.93;
+    }
+  }
+  &__semester::after {
     position: absolute;
     left: -7px;
     top: 0px;
@@ -169,7 +177,6 @@
       width: 17px;
       height: 17px;
       background-image: url(/images/program/accent-desktop.svg);
-
     }
   }
 
