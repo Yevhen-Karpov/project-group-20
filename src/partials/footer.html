@@ -2,7 +2,24 @@
   <div class="footer__container">
     <div class="footer__logo">
       <a class="footer__logo-link" href="index.html">
-        <img class="footer__img-logo" src="/images/tablet/logo.jpg" alt="logo" />
+        <picture class="picture">
+                    <source
+            srcset="/images/tablet/logo.jpg 1x, /images/tablet/logo@2x.jpg 2x"
+            media="(min-width: 1366px)"
+            type="image/webp"
+          />
+          <source
+            srcset="/images/tablet/logo.jpg 1x, /images/tablet/logo@2x.jpg 2x"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="/images/mobaile/logo.jpg 1x, /images/mobaile/logo@2x.jpg 2x"
+            media="(max-width: 767px)"
+                  type="image/webp"
+          />
+          <img class="footer__img-logo" src="/images/tablet/logo.jpg" alt="logo" />
+        </picture>
       </a>
     </div>
     <ul class="footer__list">
@@ -14,14 +31,13 @@
           +38 (000) 000 00 00</a
         >
       </li>
-      <li class="footer__icon-instagram">
-        <a class="footer__instagram" href="index.html">
-          <img class="footer__img-instagram" src="/images/mobaile/instagram.jpg" alt="logo" />
+      <li class="footer__icon-instagram"> 
+       <a class="footer__instagram" href="index.html"> <div class="footer__box"></div></a>
         </a>
       </li>
     </ul>
   </div>
   <div class="footer__information">
-    <p class="footer__desk">@ All rights reserved, 2019</p>
+    <p class="footer__desk">&#64; All rights reserved, 2019</p>
   </div>
 </footer>
