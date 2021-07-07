@@ -8,46 +8,34 @@
   width: 1px !important;
   overflow: hidden;
 }
-.advantages__title-adapted::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  min-width: 61px;
-  height: 63px;
-  background-image: url(/images/mobaile/group1.svg);
-  margin-right: 10px;
-  background-repeat: no-repeat;
-}
-.advantages__title-modern::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  min-width: 61px;
-  height: 63px;
-  background-image: url(/images/mobaile/group2.svg);
-  margin-right: 10px;
-  background-repeat: no-repeat;
-}
+.advantages__title-adapted::before,
+.advantages__title-modern::before,
 .advantages__title-financial::before {
   content: '';
   display: inline-block;
   vertical-align: middle;
   min-width: 61px;
   height: 63px;
-  background-image: url(/images/mobaile/group3.svg);
   margin-right: 10px;
   background-repeat: no-repeat;
 }
+.advantages__title-adapted::before {
+  background-image: url(/images/mobaile/group1.svg);
+}
+.advantages__title-modern::before {
+  background-image: url(/images/mobaile/group2.svg);
+}
+.advantages__title-financial::before {
+  background-image: url(/images/mobaile/group3.svg);
+}
 .advantages__title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 23px;
+  line-height: 1.64;
   display: flex;
   align-items: center;
   letter-spacing: 0.08em;
-  color: #111518;
+  color: var(--accent-text-color);
   margin-bottom: 26px;
 }
 .containerr {
@@ -87,22 +75,20 @@
     padding-left: 183px;
     padding-right: 153px;
   }
-  .advantages__title-adapted::before {
-    min-width: 102px;
-    height: 104px;
-    margin-right: -18px;
-    background-image: url(/images/desktop/group1.svg);
-  }
-  .advantages__title-modern::before {
-    min-width: 102px;
-    height: 104px;
-    margin-right: -18px;
-    background-image: url(/images/desktop/group2.svg);
-  }
+  .advantages__title-adapted::before,
+  .advantages__title-modern::before,
   .advantages__title-financial::before {
     min-width: 102px;
     height: 104px;
     margin-right: -18px;
+  }
+  .advantages__title-adapted::before {
+    background-image: url(/images/desktop/group1.svg);
+  }
+  .advantages__title-modern::before {
+    background-image: url(/images/desktop/group2.svg);
+  }
+  .advantages__title-financial::before {
     background-image: url(/images/desktop/group3.svg);
   }
   .advantages__list {

@@ -65,14 +65,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
   .footer__desk {
-    padding-left: 20px;
+    padding-left: 40px;
   }
   .footer__phone {
     padding-right: 24px;
   }
   .footer__icon-instagram {
+    display: flex;
     border-left: 1px solid var(--main-text-color);
     padding-left: 24px;
   }
@@ -82,19 +86,24 @@
   }
 }
 @media screen and (min-width: 1366px) {
-  .container {
-    width: 1366px;
-  }
   .footer__container {
     display: flex;
     justify-content: left;
     align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .footer__logo {
-    margin-left: 183px;
+    padding-left: 183px;
     margin-right: 290px;
   }
   .footer__desk {
     margin-left: 183px;
+    padding-left: 0px;
+  }
+  .footer__phone-link {
+    font-size: 30px;
+    line-height: 1.23;
+    color: var(--accent-text-color);
   }
 }
