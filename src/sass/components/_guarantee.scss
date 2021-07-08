@@ -1,0 +1,133 @@
+.garantee {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1365px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.garantee__container {
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+  @media screen and (max-width: 1365px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    max-width: 1366px;
+    margin-left: 183px;
+    margin-right: 183px;
+  }
+}
+
+.garantee__title {
+  text-align: center;
+
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+
+  @media screen and (max-width: 1365px) {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+}
+
+.garantee__list {
+  background-color: var(--background-color);
+
+  @media screen and (max-width: 767px) {
+    padding: 30px 20px 31px 26px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    padding: 30px 50px 30px 79px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding: 50px 112px 45px;
+  }
+}
+
+.garantee__item {
+  position: relative;
+
+  color: var(--accent-description);
+
+  @media screen and (max-width: 767px) {
+    padding-left: 25px;
+  }
+
+  @media screen and (max-width: 1365px) {
+    font-size: 12px;
+    line-height: 1.67;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &:not(:last-child) {
+    border-left: 1px dashed var(--main-text-color);
+
+    @media screen and (max-width: 767px) {
+      padding-bottom: 23px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding-bottom: 20px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background-image: url('../images/garantee-icons/campfire.svg');
+    background-size: contain;
+
+    @media screen and (max-width: 1365px) {
+      left: -7px;
+      width: 14px;
+      height: 20px;
+    }
+    @media screen and (min-width: 1366px) {
+      left: -9px;
+      width: 22px;
+      height: 30px;
+    }
+  }
+}
+
+.garantee__accent {
+  color: var(--accent-link-color);
+}
