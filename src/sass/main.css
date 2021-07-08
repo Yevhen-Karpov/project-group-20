@@ -11,6 +11,7 @@ h5,
 h6,
 p {
   margin: 0;
+
 }
 
 ul,
@@ -1183,12 +1184,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .container-reviews {
-    max-width: 1366px;
-    padding: 0 20px 0 26px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .reviewer {
@@ -1439,7 +1434,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
+
   .contacts {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 21, 24, 0.8)), to(rgba(17, 21, 24, 0.8))), url("../images/desktop/contacts-desktop.jpg");
     background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url("../images/desktop/contacts-desktop.jpg");
@@ -1551,7 +1546,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+
   .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1593,7 +1588,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
+
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
