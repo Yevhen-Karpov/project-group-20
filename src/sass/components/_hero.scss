@@ -5,7 +5,7 @@
     height: auto;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
+    background-color: #fff;
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 
     background-position-y: 30px;
@@ -20,10 +20,19 @@
     }
   }
   &__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    width: 320px;
+
     @media screen and (min-width: 768px) {
+      width: 768px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+    }
+    @media screen and (min-width: 1366px) {
+      width: 1366px;
     }
   }
 
