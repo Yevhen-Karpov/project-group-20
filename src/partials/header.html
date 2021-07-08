@@ -2,11 +2,7 @@
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo" href="index.html">
-        <picture>
-          <source srcset="/images/header/logo.svg" media="(min-width: 768px)" />
-          <source srcset="/images/header/logo-mobile.svg" media="(max-width: 767px)" />
-          <img class="header__logo-img" src="/images/header/logo.svg" alt="Logo HellEN" />
-        </picture>
+        <img class="header__logo-img" src="/images/header/logo.svg" alt="Logo HellEN" />
       </a>
       <ul class="menu">
         <li class="menu__item">
@@ -40,11 +36,7 @@
         </svg>
       </button>
       <a class="header__logo-menu" href="index.html">
-        <picture>
-          <source srcset="/images/header/logo-menu.svg" media="(min-width: 768px)" />
-          <source srcset="/images/header/logo-menu-mobile.svg" media="(max-width: 767px)" />
           <img class="header__logo-img" src="/images/header/logo-menu.svg" alt="Logo HellEN" />
-        </picture>
       </a>
       <ul class="mobile-menu__nav">
         <li class="mobile-menu__item">
@@ -66,18 +58,17 @@
 </header>
 
 <script type="text/javascript">
-(() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-    const mobileMenuRef = document.querySelector("[data-menu]");
-    const mobileBtnClose = document.querySelector("[data-menu-close]");
-  
-    menuBtnRef.addEventListener("click", () => {
-      mobileMenuRef.classList.toggle("is-open");
+  (() => {
+    const menuBtnRef = document.querySelector('[data-menu-button]');
+    const mobileMenuRef = document.querySelector('[data-menu]');
+    const mobileBtnClose = document.querySelector('[data-menu-close]');
+
+    menuBtnRef.addEventListener('click', () => {
+      mobileMenuRef.classList.toggle('is-open');
     });
-  
-    mobileBtnClose.addEventListener("click", () => {
-      mobileMenuRef.classList.toggle("is-open");
+
+    mobileBtnClose.addEventListener('click', () => {
+      mobileMenuRef.classList.toggle('is-open');
     });
   })();
 </script>
-
