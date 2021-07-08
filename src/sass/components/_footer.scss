@@ -1,12 +1,11 @@
-.footer__information {
-  background: var(--accent-text-color);
-}
-.footer__desk {
-  padding-top: 21px;
-  padding-bottom: 21px;
-  font-size: 14px;
-  line-height: 2;
-  color: var(--main-text-color);
+/* стили значка инстаграма */
+.footer__box {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background-image: url('/images/desktop/instagram.svg');
+  background-repeat: no-repeat;
 }
 .footer__phone-link {
   display: flex;
@@ -21,42 +20,48 @@
 .footer__icon-phone {
   margin-right: 10px;
   width: 30px;
-  height: 29px;
+  height: 19px;
   fill: var(--accent-link-color);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .footer__icon-phone {
-    width: 20px;
-    height: 19px;
-  }
-  .footer__container {
-    text-align: center;
-  }
-  .footer__logo {
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 22px;
-  }
-  .footer__phone {
-    padding-bottom: 31px;
-  }
+.footer__container {
+  text-align: center;
+}
+.footer__logo {
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
 
-  .footer__img-logo {
-    width: 80px;
-    height: 30px;
-    margin: auto;
-    margin-bottom: 30px;
-  }
-  .footer__img-instagram {
-    margin: auto;
-    margin-bottom: 30px;
-  }
-  .footer__desk {
-    text-align: center;
-  }
+.footer__img-logo {
+  width: 80px;
+}
+
+.footer__desk {
+  text-align: center;
+}
+.footer__phone {
+  margin-bottom: 31px;
+}
+.footer__information {
+  background: var(--accent-text-color);
+}
+.footer__desk {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--main-text-color);
 }
 @media screen and (min-width: 768px) {
+  .footer__box {
+    margin-bottom: 0px;
+  }
+
+  .footer__container {
+    display: flex;
+    width: 768px;
+  }
   .footer__list {
     display: flex;
     align-items: center;
@@ -70,10 +75,14 @@
     margin: 0 auto;
   }
   .footer__desk {
+    margin: 0 auto;
+    width: 768px;
     padding-left: 40px;
+    padding-right: 40px;
   }
   .footer__phone {
     padding-right: 24px;
+    margin-bottom: 0;
   }
   .footer__icon-instagram {
     display: flex;
@@ -84,26 +93,32 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .footer__img-logo {
+    width: 128px;
+  }
 }
 @media screen and (min-width: 1366px) {
   .footer__container {
-    display: flex;
+    width: 1366px;
     justify-content: left;
     align-items: center;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
   .footer__logo {
-    padding-left: 183px;
-    margin-right: 290px;
+    margin-right: 300px;
   }
   .footer__desk {
-    margin-left: 183px;
+    width: 1366px;
+    margin: 0 auto;
     padding-left: 0px;
   }
   .footer__phone-link {
     font-size: 30px;
     line-height: 1.23;
     color: var(--accent-text-color);
+  }
+  .footer__icon-phone {
+    margin-right: 15px;
   }
 }

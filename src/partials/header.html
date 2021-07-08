@@ -1,55 +1,74 @@
 <header class="header">
-  <div class="containerh header__container">
+  <div class="header__container">
     <nav class="header__nav">
-      <a class="logo header__logo" href="index.html"
-        ><img class="test" src="/images/tablet/logo.jpg" alt="ff"
-      /></a>
-      <ul class="menu list">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="/images/header/logo.svg" alt="Logo HellEN" />
+      </a>
+      <ul class="menu">
         <li class="menu__item">
-          <a class="menu__link link current" href="">Studying program</a>
+          <a class="menu__link" href="#program">Studying program</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" href="">About</a>
+          <a class="menu__link" href="#about">About</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" href="#">Training options</a>
+          <a class="menu__link" href="#options">Training options</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" href="#">Contacts</a>
+          <a class="menu__link" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
-    <button class="header__mobail-menu-btn" data-menu-button>
-      <svg class="header__mobail-menu">
+    <button class="consultation-button" type="button">Consultation by phone</button>
+
+    <button class="header__mobile-menu-btn" data-menu-button>
+      <svg class="header__mobile-menu">
         <use href="/images/icons.svg#mobile-menu"></use>
       </svg>
     </button>
   </div>
-  <div class="mobail-menu" data-menu>
-    <div class="container mobail-menu__container">
-      <button type="button" class="mobail-menu__close-btn" data-menu-close>
-        <svg class="mobail-menu__close">
+
+  <div class="mobile-menu" data-menu>
+    <div class="mobile-menu__container">
+      <button type="button" class="mobile-menu__close-btn" data-menu-close>
+        <svg class="mobile-menu__close">
           <use href="/images/icons.svg#mobile-close"></use>
         </svg>
       </button>
-      <a class="logo header__logo-menu" href="index.html"
-        ><img src="/images/mobaile/logomenu.png" alt="ff"
-      /></a>
-      <ul class="mobail-menu__nav">
-        <li class="mobail-menu__item">
-          <a class="mobail-menu__link current" href="">Studying program</a>
+      <a class="header__logo-menu" href="index.html">
+          <img class="header__logo-img" src="/images/header/logo-menu.svg" alt="Logo HellEN" />
+      </a>
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a href="#program" class="mobile-menu__link" data-menu-close>Studying program</a>
         </li>
-        <li class="mobail-menu__item">
-          <a class="mobail-menu__link-about" href="">About</a>
+        <li class="mobile-menu__item">
+          <a href="#about" class="mobile-menu__link">About</a>
         </li>
-        <li class="mobail-menu__item">
-          <a href="" class="mobail-menu__link">Training options</a>
+        <li class="mobile-menu__item">
+          <a href="#options" class="mobile-menu__link">Training options</a>
         </li>
-        <li class="mobail-menu__item">
-          <a href="" class="mobail-menu__link">Contacts</a>
+        <li class="mobile-menu__item">
+          <a href="#contacts" class="mobile-menu__link">Contacts</a>
         </li>
       </ul>
-      <button class="modal-button" type="button">Consultation by phone</button>
+      <button class="mobile-menu__btn" type="button">Consultation by phone</button>
     </div>
   </div>
 </header>
+
+<script type="text/javascript">
+  (() => {
+    const menuBtnRef = document.querySelector('[data-menu-button]');
+    const mobileMenuRef = document.querySelector('[data-menu]');
+    const mobileBtnClose = document.querySelector('[data-menu-close]');
+
+    menuBtnRef.addEventListener('click', () => {
+      mobileMenuRef.classList.toggle('is-open');
+    });
+
+    mobileBtnClose.addEventListener('click', () => {
+      mobileMenuRef.classList.toggle('is-open');
+    });
+  })();
+</script>

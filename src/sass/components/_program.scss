@@ -7,10 +7,10 @@
   padding-top: 50px;
 
   background-color: var(--accent-text-color);
+
+  
   @media screen and (min-width: 1366px) {
-    position: relative;
     padding-top: 120px;
-    padding-bottom: 153px;
   }
 
   &:before {
@@ -71,15 +71,17 @@
     padding: 0 20px 0 26px;
   }
   &:after {
+
     content: '';
     position: absolute;
-    bottom: -56px;
-    left: 200px;
+    bottom: -100px;
+    right: 0px;
     width: 120px;
     height: 137px;
     background-image: url(../images/program/program-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
+
 
     @media screen and (min-width: 768px) {
       bottom: -140px;
@@ -89,7 +91,7 @@
       background-image: url(../images/program/program-tablet.png);
     }
     @media screen and (min-width: 1366px) {
-      top: 650px;
+      top: 647px;
       left: -150px;
       width: 740px;
       height: 502px;
