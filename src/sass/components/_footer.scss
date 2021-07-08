@@ -7,16 +7,6 @@
   background-image: url('/images/desktop/instagram.svg');
   background-repeat: no-repeat;
 }
-.footer__information {
-  background: var(--accent-text-color);
-}
-.footer__desk {
-  padding-top: 21px;
-  padding-bottom: 21px;
-  font-size: 14px;
-  line-height: 2;
-  color: var(--main-text-color);
-}
 .footer__phone-link {
   display: flex;
   justify-content: center;
@@ -30,43 +20,38 @@
 .footer__icon-phone {
   margin-right: 10px;
   width: 30px;
-  height: 29px;
+  height: 19px;
   fill: var(--accent-link-color);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .footer__icon-phone {
-    width: 20px;
-    height: 19px;
-  }
-  .footer__container {
-    text-align: center;
-  }
-  .footer__logo {
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 22px;
-  }
-  .footer__phone {
-    padding-bottom: 31px;
-  }
-
-  .footer__img-logo {
-    width: 80px;
-    height: 30px;
-    margin: auto;
-  }
-
-  .footer__desk {
-    text-align: center;
-  }
+.footer__container {
+  text-align: center;
 }
+.footer__logo {
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+
+.footer__img-logo {
+  width: 80px;
+  text-align: center;
+}
+
+.footer__desk {
+  text-align: center;
+}
+.footer__phone {
+  margin-bottom: 31px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__box {
     margin-bottom: 0px;
   }
 
   .footer__container {
+    display: flex;
     width: 768px;
   }
   .footer__list {
@@ -89,6 +74,7 @@
   }
   .footer__phone {
     padding-right: 24px;
+    margin-bottom: 0;
   }
   .footer__icon-instagram {
     display: flex;
@@ -103,7 +89,6 @@
 @media screen and (min-width: 1366px) {
   .footer__container {
     width: 1366px;
-    display: flex;
     justify-content: left;
     align-items: center;
     padding-left: 26px;
@@ -125,4 +110,15 @@
   .footer__icon-phone {
     margin-right: 15px;
   }
+}
+
+.footer__information {
+  background: var(--accent-text-color);
+}
+.footer__desk {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--main-text-color);
 }
