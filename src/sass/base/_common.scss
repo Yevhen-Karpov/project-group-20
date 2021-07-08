@@ -66,3 +66,7 @@ body {
   letter-spacing: 0.03em;
   color: #111518;
 }
+
+body.modal-open {
+  overflow: hidden;
+}

@@ -16,7 +16,7 @@
                     <li class="about__item item">Passed excellent at the international analogue of UPE - Cambridge PET
                         (Preliminary English Test)</li>
                 </ul>
-                <span class="about__line"></span>
+                <span class="about__line" id="certificate"></span>
                 <p class="about__text">Graduated from the Institute of International Relations of the NAU with a degree
                     in traslator-analyst.</p>
                 <p class="about__text">In spare time takes courses from the best universities in the world on effective
@@ -26,19 +26,38 @@
                     write an Essay (Berkeley), Acadamic and Business Writing (Berkeley), The Art of teaching (GEMS
                     education), Powerful
                     Tools for Teaching and Learning (University of Houston).</p>
-                <a class="about__link" href="#popup" id="certificate">Cambrige English Entry Level Certificate
+                <a class="about__link" href="#" data-modal-open >Cambrige English Entry Level Certificate
                 </a>
             </div>
         </div>
     </div>
 </section>
 <!--=========== CERTIFICATE ===========-->
-<div class="popup" id="popup">
-    <div class="popup__modal">
-        <a href="#certificate" class="popup__close-button">
+<div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="modal">
+        <a href="#certificate" class="modal__close-button" data-modal-close>
             <svg width="11" height="11">
                 <use href="images/icons.svg#cross"></use>
             </svg>
         </a>
     </div>
 </div>
+
+<script type="text/javascript">
+   (() => {
+        const refs = {
+            openModalBtn: document.querySelector("[data-modal-open]"),
+            closeModalBtn: document.querySelector("[data-modal-close]"),
+            modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+
+        function toggleModal() {
+            refs.modal.classList.toggle("backdrop--is-hidden");
+            document.body.classList.toggle("modal-open");
+        }
+    })();
+</script>
