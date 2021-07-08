@@ -35,7 +35,6 @@
 
 .footer__img-logo {
   width: 80px;
-  text-align: center;
 }
 
 .footer__desk {
@@ -44,7 +43,16 @@
 .footer__phone {
   margin-bottom: 31px;
 }
-
+.footer__information {
+  background: var(--accent-text-color);
+}
+.footer__desk {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--main-text-color);
+}
 @media screen and (min-width: 768px) {
   .footer__box {
     margin-bottom: 0px;
@@ -85,6 +93,9 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .footer__img-logo {
+    width: 128px;
+  }
 }
 @media screen and (min-width: 1366px) {
   .footer__container {
@@ -110,15 +121,4 @@
   .footer__icon-phone {
     margin-right: 15px;
   }
-}
-
-.footer__information {
-  background: var(--accent-text-color);
-}
-.footer__desk {
-  padding-top: 21px;
-  padding-bottom: 21px;
-  font-size: 14px;
-  line-height: 2;
-  color: var(--main-text-color);
 }
