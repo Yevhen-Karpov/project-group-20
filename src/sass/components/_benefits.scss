@@ -2,16 +2,24 @@
   background-image: linear-gradient(to bottom, #111518 50%, #ffffff 20%);
 
   counter-reset: number;
-  padding-top: 164px;
-  padding-bottom: 66px;
-
+  padding-top: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 189px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding-top: 164px;
+    padding-bottom: 66px;
+  }
   .benefits__title {
+    padding-right: 100px;
+
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
     color: var(--accent-header);
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
+      padding-right: 0;
       text-align: center;
     }
     @media screen and (min-width: 1366px) {
@@ -46,26 +54,52 @@
 }
 //
 .benefits-list {
+  padding: 20px 30px;
+
   background-color: var(--accent-header);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-  padding: 20px 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 98px 35px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 0 84px 70px;
+  }
+
   &__item {
+    position: relative;
+
+    margin-top: 44px;
+    counter-increment: number;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.08em;
     color: var(--accent-text-color);
-    margin-top: 44px;
-    counter-increment: number;
-    position: relative;
+
     &:not(:last-child) {
       margin-bottom: 69px;
     }
     @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 44px) / 2);
+
+      margin-top: 76px;
+
       line-height: 1.71;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
 
     @media screen and (min-width: 1366px) {
+      flex-basis: calc((100% - 120px) / 3);
+      margin-top: 113px;
       font-size: 20px;
       line-height: 1.43;
     }
@@ -91,37 +125,6 @@
       background-color: var(--accent-link-color);
       top: -20px;
       left: 0;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .benefits-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    padding: 35px 98px;
-
-    &__item {
-      flex-basis: calc((100% - 44px) / 2);
-    }
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .benefits-list {
-    padding: 70px 84px;
-
-    &__item {
-      flex-basis: calc((100% - 120px) / 3);
-      &::before {
-        top: -40px;
-      }
-
-      &::after {
-        top: -25px;
-      }
     }
   }
 }
