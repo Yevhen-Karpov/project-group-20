@@ -37,10 +37,15 @@
 }
 
 .header__nav {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header__logo-img {
+  width: 80px;
+  @media screen and (min-width: 768px) {
+    width: 128px;
+  }
 }
 .header__logo {
   @media screen and (min-width: 1366px) {
@@ -129,7 +134,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
- 
+
   @media screen and (min-width: 1366px) {
     display: none;
   }
@@ -233,4 +238,3 @@
     }
   }
 }
-
