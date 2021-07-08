@@ -39,6 +39,7 @@
   margin-bottom: 26px;
 }
 .containerr {
+  width: 480px;
   margin: 0 auto;
   padding-left: 52px;
   padding-right: 52px;
@@ -51,6 +52,7 @@
 }
 @media screen and (min-width: 768px) {
   .containerr {
+    width: 768px;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -71,6 +73,7 @@
 }
 @media screen and (min-width: 1366px) {
   .containerr {
+    width: 1366px;
     margin: 0 auto;
     padding-left: 183px;
     padding-right: 153px;
@@ -98,7 +101,7 @@
   .advantages__icon {
     margin-left: 0px;
     margin-top: 0px;
-    flex-basis: calc((100% - 180px) / 3);
+    flex-basis: calc((100% - 50px) / 3);
   }
   .advantages__title {
     font-size: 20px;
