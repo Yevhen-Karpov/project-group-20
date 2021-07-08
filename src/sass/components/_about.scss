@@ -292,13 +292,11 @@
     height: 80%;
   }
 
-  // Use this code if the height of the certificate more than 800px:
-
-  // @media screen and (max-height: 800px) {
-  //   top: 0;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  // }
+  @media screen and (max-height: 800px) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .certificate {
   display: block;
