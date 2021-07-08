@@ -11,6 +11,7 @@ h5,
 h6,
 p {
   margin: 0;
+
 }
 
 ul,
@@ -201,9 +202,6 @@ body {
   }
 }
 
-.how-do-we {
-  padding-bottom: 50px;
-}
 
 .how-do-we__container {
   width: 100%;
@@ -395,6 +393,7 @@ body {
     line-height: 1.56;
   }
 }
+
 
 /*--------------------Our program----------------*/
 .section-program {
@@ -1191,12 +1190,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .container-reviews {
-    max-width: 1366px;
-    padding: 0 53px;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
   .reviewer {
@@ -1281,187 +1275,6 @@ body {
   }
 }
 
-.reviewer__summary {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 25px;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: center;
-  letter-spacing: 0.08em;
-  color: var(--main-text-color);
-}
-
-@media screen and (min-width: 768px) {
-  .reviewer__summary {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .reviewer__summary {
-    padding-right: 210px;
-    font-size: 14px;
-    line-height: 1.21;
-  }
-}
-
-.review {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 50px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.67;
-  text-align: center;
-  color: var(--accent-description);
-}
-
-.review__link {
-  font-size: 12px;
-  line-height: 1.67;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: var(--accent-link-color);
-}
-
-@media screen and (min-width: 768px) {
-  .review {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 0;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .review {
-    font-size: 18px;
-    line-height: 1.56;
-  }
-}
-
-.change-reviewer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .change-reviewer {
-    display: block;
-    margin-top: 30px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .change-reviewer {
-    margin-top: 40px;
-  }
-}
-
-.change-reviewer__collection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 182px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-  .change-reviewer__collection {
-    width: 558px;
-  }
-}
-
-.change-reviewer__item--tablet {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .change-reviewer__item--tablet {
-    display: block;
-  }
-}
-
-.change-reviewer__img {
-  display: block;
-  width: 54px;
-  height: 54px;
-  cursor: pointer;
-}
-
-.change-reviewer__img--tablet {
-  display: none;
-}
-
-.change-reviewer__icon {
-  width: 25px;
-  cursor: pointer;
-  fill: var(--accent-link-color);
-}
-
-@media screen and (min-width: 768px) {
-  .change-reviewer__icon {
-    position: absolute;
-    top: 160px;
-  }
-  .change-reviewer__icon--left {
-    left: 27px;
-  }
-  .change-reviewer__icon--right {
-    right: 27px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .change-reviewer__icon {
-    top: 200px;
-  }
-  .change-reviewer__icon--left {
-    left: 53px;
-  }
-  .change-reviewer__icon--right {
-    right: 53px;
-  }
-}
-
-.contacts__container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (min-width: 480px) {
-  .contacts__container {
-    width: 480px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .contacts__container {
-    width: 1366px;
-  }
-}
 
 .contacts {
   padding-top: 55px;
@@ -1629,7 +1442,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
+
   .contacts {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 21, 24, 0.8)), to(rgba(17, 21, 24, 0.8))), url("../images/desktop/contacts-desktop.jpg");
     background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url("../images/desktop/contacts-desktop.jpg");
@@ -1746,13 +1559,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer__box {
-    margin-bottom: 0px;
-  }
-  .footer__container {
-    width: 768px;
-  }
+
   .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1797,7 +1604,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1366px) {
+
   .footer__container {
     width: 1366px;
     display: -webkit-box;
