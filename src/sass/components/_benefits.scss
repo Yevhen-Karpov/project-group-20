@@ -54,6 +54,8 @@
 }
 //
 .benefits-list {
+  position: relative;
+  z-index: 100;
   padding: 20px 30px;
 
   background-color: var(--accent-header);
