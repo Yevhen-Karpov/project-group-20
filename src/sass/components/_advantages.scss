@@ -10,116 +10,105 @@
 }
 
 .advantages {
-  padding-top: 37px;
-  padding-bottom: 45px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 46px;
+  background-color: var(--accent-header);
+  padding-top: 30px;
+  padding-bottom: 50px;
+  &__title-adapted::before,
+  &__title-modern::before,
+  &__title-financial::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 61px;
+    height: 63px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+
   }
-  @media screen and (min-width: 1366px) {
-    padding-top: 114px;
-    padding-bottom: 0px;
+  &__title-adapted::before {
+    background-image: url(/images/mobaile/group1.svg);
   }
-}
-.advantages__title-adapted::before,
-.advantages__title-modern::before,
-.advantages__title-financial::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  min-width: 61px;
-  height: 63px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-}
-.advantages__title-adapted::before {
-  background-image: url(/images/mobaile/group1.svg);
-}
-.advantages__title-modern::before {
-  background-image: url(/images/mobaile/group2.svg);
-}
-.advantages__title-financial::before {
-  background-image: url(/images/mobaile/group3.svg);
-}
-.advantages__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.64;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.08em;
-  color: var(--accent-text-color);
-  margin-bottom: 26px;
-}
-.containerr {
-  width: 480px;
-  margin: 0 auto;
-  padding-left: 52px;
-  padding-right: 52px;
+  &__title-modern::before {
+    background-image: url(/images/mobaile/group2.svg);
+  }
+  &__title-financial::before {
+    background-image: url(/images/mobaile/group3.svg);
+
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.64;
+    display: flex;
+    align-items: center;
+
+    letter-spacing: 0.08em;
+    color: var(--accent-text-color);
+  }
 }
 
-@media only screen and (min-width: 320px) and (min-width: 480px) {
-  .containerr {
-    width: 320px;
-  }
-  .advantages__icon {
-    width: 214px;
+@media only screen and (max-width: 767px) {
+  .advantages__icon:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
-  .containerr {
-    width: 768px;
-    margin: 0 auto;
-    padding: 20px 46px;
-  }
-  .advantages__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .advantages__icon {
-    /*flex-basis: calc((100% - 60px) / 3);*/
-    width: 214px;
-    height: 69px;
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__icon:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: -20px;
+      margin-top: -20px;
+    }
+    &__icon {
+      margin-left: 20px;
+      margin-top: 20px;
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
   }
 }
 @media screen and (min-width: 1366px) {
-  .containerr {
-    width: 1366px;
-    margin: 0 auto;
-    padding-top: 96px;
-    padding-bottom: 128px;
-  }
-  .advantages__title-adapted::before,
-  .advantages__title-modern::before,
-  .advantages__title-financial::before {
-    min-width: 102px;
-    height: 104px;
-    margin-right: -18px;
-  }
-  .advantages__title-adapted::before {
-    background-image: url(/images/desktop/group1.svg);
-  }
-  .advantages__title-modern::before {
-    background-image: url(/images/desktop/group2.svg);
-  }
-  .advantages__title-financial::before {
-    background-image: url(/images/desktop/group3.svg);
-  }
-  .advantages__list {
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  .advantages__icon {
-    margin-left: 0px;
-    margin-top: 0px;
-    flex-basis: calc((100% - 50px) / 3);
-    height: 102px;
-  }
-  .advantages__title {
-    font-size: 20px;
-    line-height: 1.65;
-    margin-bottom: 130px;
+  .advantages {
+    padding-top: 0px;
+    padding-bottom: 130px;
+    &__list {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    &__icon {
+      margin-left: 0px;
+      margin-top: 0px;
+      flex-basis: calc((100% - 320px) / 3);
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+    &__title-adapted::before,
+    &__title-modern::before,
+    &__title-financial::before {
+      min-width: 102px;
+      height: 104px;
+      margin-right: -18px;
+    }
+    &__title-adapted::before {
+      background-image: url(/images/desktop/group1.svg);
+    }
+    &__title-modern::before {
+      background-image: url(/images/desktop/group2.svg);
+    }
+    &__title-financial::before {
+      background-image: url(/images/desktop/group3.svg);
+    }
   }
 }

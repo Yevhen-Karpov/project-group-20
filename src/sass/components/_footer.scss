@@ -37,9 +37,6 @@
   width: 80px;
 }
 
-.footer__desk {
-  text-align: center;
-}
 .footer__phone {
   margin-bottom: 31px;
 }
@@ -52,6 +49,12 @@
   font-size: 14px;
   line-height: 2;
   color: var(--main-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer__desk {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__box {
@@ -70,15 +73,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0 auto;
-  }
-  .footer__desk {
-    margin: 0 auto;
-    width: 768px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
   .footer__phone {
     padding-right: 24px;
@@ -102,16 +96,9 @@
     width: 1366px;
     justify-content: left;
     align-items: center;
-    padding-left: 26px;
-    padding-right: 26px;
   }
   .footer__logo {
     margin-right: 300px;
-  }
-  .footer__desk {
-    width: 1366px;
-    margin: 0 auto;
-    padding-left: 0px;
   }
   .footer__phone-link {
     font-size: 30px;
