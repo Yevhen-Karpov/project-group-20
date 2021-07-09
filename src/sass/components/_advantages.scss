@@ -8,7 +8,9 @@
   width: 1px !important;
   overflow: hidden;
 }
+
 .advantages {
+
   background-color: var(--accent-header);
   padding-top: 30px;
   padding-bottom: 50px;
@@ -22,6 +24,7 @@
     height: 63px;
     margin-right: 10px;
     background-repeat: no-repeat;
+
   }
   &__title-adapted::before {
     background-image: url(/images/mobaile/group1.svg);
@@ -31,6 +34,7 @@
   }
   &__title-financial::before {
     background-image: url(/images/mobaile/group3.svg);
+
   }
   &__title {
     font-weight: 700;
@@ -38,6 +42,7 @@
     line-height: 1.64;
     display: flex;
     align-items: center;
+
     letter-spacing: 0.08em;
     color: var(--accent-text-color);
   }
@@ -69,6 +74,7 @@
       margin-top: 20px;
       flex-basis: calc((100% - 60px) / 3);
     }
+
   }
 }
 @media screen and (min-width: 1366px) {
