@@ -4,7 +4,6 @@
  * Все паршалы подключаются сюда.
  */
 
-
 h1,
 h2,
 h3,
@@ -46,7 +45,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   width: 320px;
-
+}
 .footer__information {
   background: var(--accent-text-color);
 }
@@ -67,8 +66,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -77,8 +76,8 @@ img {
   letter-spacing: 0.08em;
   color: var(--accent-text-color);
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .footer__icon-phone {
@@ -101,8 +100,8 @@ img {
   }
   .footer__logo {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-top: 30px;
     padding-bottom: 22px;
   }
@@ -128,25 +127,25 @@ img {
   .container {
     width: 768px;
   }
-  
+
   .footer__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .footer__desk {
     padding-left: 20px;
@@ -169,8 +168,6 @@ img {
     width: 1366px;
   }
 }
-
-
 
 .hero__title {
   font-weight: 800;
