@@ -1,0 +1,64 @@
+<section id="about" class="about">
+    <div class="about__container container">
+        <h2 class="about__title">Teacher</h2>
+        <div class="about__wrapper">
+            <picture class="about__img">
+                <source srcset="images/desktop/teacher.jpg 1x, images/desktop/teacher@2x.jpg 2x" media="(min-width: 1366px)">
+                <source srcset="images/tablet/teacher.jpg 1x, images/tablet/teacher@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="images/mobaile/teacher.jpg 1x, images/mobaile/teacher@2x.jpg 2x" media="(max-width: 767px)">
+                <img src="images/desktop/teacher.jpg" alt="photo">
+            </picture>    
+            <div>
+                <h3 class="about__subtitle">Elena Moreva</h3>
+                <ul class="about__list list">
+                    <li class="about__item item">6 years of experience in preparing students for UPE</li>
+                    <li class="about__item item">Own result of passing VNO - 197 points 2 years in a row</li>
+                    <li class="about__item item">Passed excellent at the international analogue of UPE - Cambridge PET
+                        (Preliminary English Test)</li>
+                </ul>
+                <span class="about__line" id="certificate"></span>
+                <p class="about__text">Graduated from the Institute of International Relations of the NAU with a degree
+                    in traslator-analyst.</p>
+                <p class="about__text">In spare time takes courses from the best universities in the world on effective
+                    teaching and assay writing techniques.</p>
+                <p class="about__text">Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style
+                    (The University of Queesland), How to
+                    write an Essay (Berkeley), Acadamic and Business Writing (Berkeley), The Art of teaching (GEMS
+                    education), Powerful
+                    Tools for Teaching and Learning (University of Houston).</p>
+                <a class="about__link" href="#" data-modal-open >Cambrige English Entry Level Certificate
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=========== CERTIFICATE ===========-->
+<div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="modal">
+        <a href="#certificate" class="modal__close-button" data-modal-close>
+            <svg width="11" height="11">
+                <use href="images/icons.svg#cross"></use>
+            </svg>
+        </a>
+        <img src="images/about-icons/certificate.png" alt="certificate" class="certificate">
+    </div>
+</div>
+
+<script type="text/javascript">
+   (() => {
+        const refs = {
+            openModalBtn: document.querySelector("[data-modal-open]"),
+            closeModalBtn: document.querySelector("[data-modal-close]"),
+            modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+
+        function toggleModal() {
+            refs.modal.classList.toggle("backdrop--is-hidden");
+            document.body.classList.toggle("modal-open");
+        }
+    })();
+</script>
