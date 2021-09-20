@@ -1,0 +1,220 @@
+/*--------------------Our program----------------*/
+
+.section-program {
+  counter-reset: semester;
+
+  position: relative;
+  padding-top: 50px;
+
+  background-color: var(--accent-text-color);
+
+  
+  @media screen and (min-width: 1366px) {
+    padding-top: 120px;
+  }
+
+  &:before {
+    content: '';
+    display: none;
+
+    @media screen and (min-width: 1366px) {
+      position: absolute;
+      top: 277px;
+      display: block;
+      width: 100%;
+      height: 1px;
+      border-top: 1px solid var(--accent-header);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 43px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--accent-header);
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin-bottom: 52px;
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 160px;
+      font-size: 46px;
+    }
+  }
+}
+
+.container-program {
+  position: relative;
+
+  &:after {
+
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    width: 120px;
+    height: 137px;
+    background-image: url(../images/program/program-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    @media screen and (min-width: 768px) {
+      bottom: -140px;
+      left: 384px;
+      width: 384px;
+      height: 280px;
+      background-image: url(../images/program/program-tablet.png);
+    }
+    @media screen and (min-width: 1366px) {
+      top: 647px;
+      left: -150px;
+      width: 740px;
+      height: 502px;
+      background-image: url(../images/program/program-desktop.png);
+    }
+  }
+}
+
+.program {
+  margin: auto;
+  padding-left: 68px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 63px;
+  }
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  &__semester {
+    position: relative;
+    padding-left: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--accent-header);
+
+    @media screen and (min-width: 768px) {
+      padding-left: 50px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding-left: 0;
+      padding-bottom: 0;
+      width: 240px;
+
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 47px;
+      border-left: 1px solid var(--accent-header);
+
+      @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+      }
+      @media screen and (min-width: 1366px) {
+        padding-bottom: 0;
+        border: none;
+      }
+    }
+  }
+  &__semester::before {
+    counter-increment: semester;
+    content: counter(semester) ' ';
+    @media screen and (min-width: 1366px) {
+      font-size: 30px;
+      line-height: 0.93;
+    }
+  }
+  &__semester::after {
+    position: absolute;
+    left: -7px;
+    top: 0px;
+
+    display: block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-image: url(/images/program/accent-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: 1366px) {
+      left: -3px;
+      top: -69px;
+      width: 17px;
+      height: 17px;
+      background-image: url(/images/program/accent-desktop.svg);
+    }
+  }
+
+  &__parts {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    @media screen and (min-width: 1366px) {
+      flex-direction: column;
+    }
+  }
+  &__part {
+    margin-top: 11px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.65;
+    /* or 20px */
+    letter-spacing: 0.08em;
+    color: var(--accent-link-color);
+    text-transform: capitalize;
+
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        width: 176px;
+        margin-right: 50px;
+      }
+    }
+
+    @media screen and (min-width: 1366px) {
+      width: initial;
+      margin-right: 0;
+      margin-top: 25px;
+      font-size: 20px;
+    }
+  }
+
+  &__part::before {
+    content: '— ';
+  }
+  &__themes {
+    margin-top: 11px;
+  }
+  &__theme {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    color: var(--main-text-color);
+    opacity: 0.5;
+
+    @media screen and (min-width: 1366px) {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+  }
+}
