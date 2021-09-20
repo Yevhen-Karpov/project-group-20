@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/utils/_variables.scss"],"names":[],"mappings":"AAAA,MACE,yBAAA,CACA,2BAAA,CACA","file":"src.457b3a31.css","sourceRoot":"../src","sourcesContent":[":root {\n  --main-text-color: #b9b9b9;\n  --accent-text-color: #111518;\n  --accent-link-color: #ff6b09;\n}\n"]}
